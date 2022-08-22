@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  mongodb:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T17:26:37.975751-04:00"
+    description: A Helm chart for mongodb
+    digest: 1f128a6c6b97ab63c8b7e75cdcfaba7e4ef6d87c84f539bb3a7f311acd058dc8
+    name: mongodb
+    type: application
+    urls:
+    - mongodb-0.1.0.tgz
+    version: 0.1.0
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-11T22:47:13.593406-04:00"
+    created: "2022-08-22T17:26:37.976335-04:00"
     description: A Helm chart for Kubernetes
     digest: 4d599b7e38a7114f0ca7cfdf9c3a9f3a1c4916113965c787812fee26ab0877f7
     name: nginx
@@ -13,7 +24,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-11T22:47:13.592903-04:00"
+    created: "2022-08-22T17:26:37.976044-04:00"
     description: A Helm chart for Kubernetes
     digest: fcc24f3d83faa12fe09ebc663e8c18420229bb5c8ac33f4748e7d288b691863d
     name: nginx
@@ -21,4 +32,4 @@ entries:
     urls:
     - nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-11T22:47:13.591705-04:00"
+generated: "2022-08-22T17:26:37.975133-04:00"
