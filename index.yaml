@@ -3,7 +3,7 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T17:47:21.1748-04:00"
+    created: "2022-08-22T17:49:49.342576-04:00"
     description: A Helm chart for mongodb
     digest: ba2d51eb891d6bb4881b6bd305d0d9fa4267d3d1330aa9c90d95b2f0575eabe3
     name: mongodb
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T17:47:21.174281-04:00"
+    created: "2022-08-22T17:49:49.342087-04:00"
     description: A Helm chart for mongodb
     digest: b47b71af15e52f44dd96eadecb497831dab5598007b4e7538a29c9cebf27d39e
     name: mongodb
@@ -24,7 +24,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T17:47:21.176138-04:00"
+    created: "2022-08-22T17:49:49.34348-04:00"
     description: A Helm chart for Kubernetes
     digest: 4d599b7e38a7114f0ca7cfdf9c3a9f3a1c4916113965c787812fee26ab0877f7
     name: nginx
@@ -34,7 +34,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T17:47:21.175488-04:00"
+    created: "2022-08-22T17:49:49.343016-04:00"
     description: A Helm chart for Kubernetes
     digest: fcc24f3d83faa12fe09ebc663e8c18420229bb5c8ac33f4748e7d288b691863d
     name: nginx
@@ -42,4 +42,20 @@ entries:
     urls:
     - nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-22T17:47:21.172594-04:00"
+  nodeapp:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T17:49:49.344412-04:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://thedevopsstore.github.io/lwplabs-repo
+      version: 0.1.1
+    description: A Helm chart for Nodeapp
+    digest: 5863607b0fa47045e4aaf640a3e88597e83362f5f6951477919a3366117fcddc
+    name: nodeapp
+    type: application
+    urls:
+    - nodeapp-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-22T17:49:49.341415-04:00"
