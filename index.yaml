@@ -3,7 +3,17 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.21293-04:00"
+    created: "2022-08-22T21:17:26.100958-04:00"
+    description: A Helm chart for mongodb
+    digest: bef29d7f420b2c7306b02115d40ab0ecc6fb6787e20e25ea9a95b1f643cec8d0
+    name: mongodb
+    type: application
+    urls:
+    - mongodb-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T21:17:26.10066-04:00"
     description: A Helm chart for mongodb
     digest: 2b8a5ffb387d7dc6e7506e2c753ddc5d89d81984f43cfa888947511d2bc281a1
     name: mongodb
@@ -13,7 +23,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.212498-04:00"
+    created: "2022-08-22T21:17:26.100214-04:00"
     description: A Helm chart for mongodb
     digest: ba2d51eb891d6bb4881b6bd305d0d9fa4267d3d1330aa9c90d95b2f0575eabe3
     name: mongodb
@@ -23,7 +33,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.212053-04:00"
+    created: "2022-08-22T21:17:26.09975-04:00"
     description: A Helm chart for mongodb
     digest: b47b71af15e52f44dd96eadecb497831dab5598007b4e7538a29c9cebf27d39e
     name: mongodb
@@ -34,7 +44,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.213799-04:00"
+    created: "2022-08-22T21:17:26.101807-04:00"
     description: A Helm chart for Kubernetes
     digest: 4d599b7e38a7114f0ca7cfdf9c3a9f3a1c4916113965c787812fee26ab0877f7
     name: nginx
@@ -44,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.213364-04:00"
+    created: "2022-08-22T21:17:26.10139-04:00"
     description: A Helm chart for Kubernetes
     digest: fcc24f3d83faa12fe09ebc663e8c18420229bb5c8ac33f4748e7d288b691863d
     name: nginx
@@ -55,7 +65,7 @@ entries:
   nodeapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.218857-04:00"
+    created: "2022-08-22T21:17:26.106956-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -70,7 +80,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.218277-04:00"
+    created: "2022-08-22T21:17:26.1063-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -85,7 +95,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.21748-04:00"
+    created: "2022-08-22T21:17:26.105586-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -100,7 +110,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:12:50.214544-04:00"
+    created: "2022-08-22T21:17:26.104794-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -113,4 +123,4 @@ entries:
     urls:
     - nodeapp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-22T21:12:50.211297-04:00"
+generated: "2022-08-22T21:17:26.098926-04:00"
