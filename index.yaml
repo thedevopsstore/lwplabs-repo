@@ -3,7 +3,7 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.616833-04:00"
+    created: "2022-08-31T17:20:19.519374-04:00"
     description: A Helm chart for mongodb
     digest: 268cdf04f0fab00781a8d06b9be9c3a2c038a4ecafc7841b5824b73b3c298f69
     name: mongodb
@@ -13,7 +13,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.616303-04:00"
+    created: "2022-08-31T17:20:19.518734-04:00"
     description: A Helm chart for mongodb
     digest: bef29d7f420b2c7306b02115d40ab0ecc6fb6787e20e25ea9a95b1f643cec8d0
     name: mongodb
@@ -23,7 +23,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.615695-04:00"
+    created: "2022-08-31T17:20:19.51818-04:00"
     description: A Helm chart for mongodb
     digest: 2b8a5ffb387d7dc6e7506e2c753ddc5d89d81984f43cfa888947511d2bc281a1
     name: mongodb
@@ -33,7 +33,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.615062-04:00"
+    created: "2022-08-31T17:20:19.517452-04:00"
     description: A Helm chart for mongodb
     digest: ba2d51eb891d6bb4881b6bd305d0d9fa4267d3d1330aa9c90d95b2f0575eabe3
     name: mongodb
@@ -43,7 +43,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.61451-04:00"
+    created: "2022-08-31T17:20:19.516879-04:00"
     description: A Helm chart for mongodb
     digest: b47b71af15e52f44dd96eadecb497831dab5598007b4e7538a29c9cebf27d39e
     name: mongodb
@@ -54,7 +54,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.617884-04:00"
+    created: "2022-08-31T17:20:19.520502-04:00"
     description: A Helm chart for Kubernetes
     digest: 4d599b7e38a7114f0ca7cfdf9c3a9f3a1c4916113965c787812fee26ab0877f7
     name: nginx
@@ -64,7 +64,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.617354-04:00"
+    created: "2022-08-31T17:20:19.520034-04:00"
     description: A Helm chart for Kubernetes
     digest: fcc24f3d83faa12fe09ebc663e8c18420229bb5c8ac33f4748e7d288b691863d
     name: nginx
@@ -75,7 +75,7 @@ entries:
   nodeapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.624102-04:00"
+    created: "2022-08-31T17:20:19.528285-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -90,7 +90,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.623459-04:00"
+    created: "2022-08-31T17:20:19.527442-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -105,7 +105,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.621849-04:00"
+    created: "2022-08-31T17:20:19.526611-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -120,7 +120,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.620838-04:00"
+    created: "2022-08-31T17:20:19.525517-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -135,7 +135,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.619851-04:00"
+    created: "2022-08-31T17:20:19.524703-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -150,7 +150,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T21:42:01.618863-04:00"
+    created: "2022-08-31T17:20:19.523694-04:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -163,4 +163,24 @@ entries:
     urls:
     - nodeapp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-22T21:42:01.613572-04:00"
+  springboot:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-31T17:20:19.541926-04:00"
+    dependencies:
+    - condition: postgres.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.8.1
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.3.1
+    description: A Helm chart for Kubernetes
+    digest: 66ec4bb26bada72aee8abb7f8648df0859b2f4d8402f3f978abd84dc0ab29b76
+    name: springboot
+    type: application
+    urls:
+    - springboot-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-31T17:20:19.515814-04:00"
